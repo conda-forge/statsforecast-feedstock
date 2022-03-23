@@ -1,4 +1,3 @@
-# {% set settingsfile = "settings.ini" %}
 {% set name = "statsforecast" %}
 {% set version = "0.5.2" %}
 
@@ -14,16 +13,6 @@ build:
   number: 0
   noarch: python
   script:
-    ## NOTE: remove the following once the 
-    #        following PR is merged.
-    #  PR: https://github.com/Nixtla/statsforecast/pull/24
-    #
-    ## Ensure inclusion of settings.ini
-    # {% set settingsfile = "settings.ini" %}
-    # # IF {{ settingsfile }} is NOT PRESENT, COPY {{ settingsfile }} from $RECIPE_DIR
-    # - echo -e "\n>>> ENSURE INCLUSION OF '{{ settingsfile }}' <<<\n\n"
-    # - if [ ! -f {{ settingsfile }} ]; then cp $RECIPE_DIR/{{ settingsfile }} {{ settingsfile }}; fi  # [not win]
-    # - copy {{ environ.get("RECIPE_DIR") }}\{{ settingsfile }} {{ settingsfile }}  # [win]
     - {{ PYTHON }} -m pip install . -vv
 
 
