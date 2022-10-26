@@ -27,6 +27,7 @@ requirements:
     - pandas
     - scipy
     - statsmodels
+    - tqdm
 
 test:
   imports:
