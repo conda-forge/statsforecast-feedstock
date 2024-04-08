@@ -24,6 +24,7 @@ requirements:
     - python >=3.8
     - antlr4-python3-runtime >=4.11.1,<4.12
     - cloudpickle
+    - coreforecast >=0.0.7
     - fugue >=0.8.1
     - matplotlib-base
     - numba >=0.55.0
