@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - pip
+    - eigen
     - pybind11
   run:
     - python
