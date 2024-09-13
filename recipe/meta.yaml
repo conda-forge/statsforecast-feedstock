@@ -18,12 +18,12 @@ requirements:
   build:
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
-    - {{ compiler("cxx") }}
+    - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - pybind11
   host:
-    - pip
     - python
+    - pip
   run:
     - python
     - antlr4-python3-runtime >=4.11.1,<4.12
