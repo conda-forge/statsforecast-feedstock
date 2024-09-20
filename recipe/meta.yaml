@@ -25,6 +25,7 @@ requirements:
     - python
     - pip
     - pybind11
+    - setuptools
   run:
     - python
     - antlr4-python3-runtime >=4.11.1,<4.12
