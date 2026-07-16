@@ -244,6 +244,3 @@ Feedstock Maintainers
 * [@nasaul](https://github.com/nasaul/)
 * [@sugatoray](https://github.com/sugatoray/)
 
-
-<!-- dummy commit to enable rerendering -->
-
